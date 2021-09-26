@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template, redirect, request
-
+from werkzeug.serving import run_simple
 
 app=Flask(__name__)
 
@@ -25,4 +25,4 @@ def contact():
 
 if __name__=="__main__":
 
-	app.run(debug=False)
+	run_simple('192.168.1.107', 9000, app, use_reloader=False)
