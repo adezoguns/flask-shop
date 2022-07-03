@@ -26,4 +26,4 @@ def contact():
 
 if __name__=="__main__":
 
-	run_simple('127.0.0.1', 9000, app, use_reloader=False)
+	run_simple('127.0.0.1', 8000, app, use_reloader=False)
